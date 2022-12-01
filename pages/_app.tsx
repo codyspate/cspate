@@ -12,13 +12,9 @@ const poppins = Poppins({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
-  const theme = useGetTheme();
   return (
-    <ThemeProvider theme={theme}>
-      <main className={poppins.className}>
-        <GlobalStyle />
-        <Component {...pageProps} />
-      </main>
-    </ThemeProvider>
+    <main className={poppins.className}>
+      <Component {...pageProps} />
+    </main>
   );
 }

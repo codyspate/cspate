@@ -39,7 +39,7 @@ const colors: Colors[] = [
 ];
 
 export const theme: DefaultTheme = {
-  colorPalette: colors[1],
+  colorPalette: colors[2],
   fontColor: {
     light: "#ffffff",
     dark: "#121314",
