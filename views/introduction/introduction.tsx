@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import contrast from "font-color-contrast";
+import { getStyledFontColor } from "../../common/utils/font-color";
 
 const Box = styled.div`
   padding: 5vh 10vw;
@@ -14,17 +16,23 @@ const Link = styled.a`
     content: "";
     position: absolute;
     z-index: -1;
-    top: 66%;
+    top: 83%;
     left: 0.3em;
     right: -0.2em;
     bottom: 0;
     transition: all 200ms cubic-bezier(0, 0.8, 0.13, 1);
-    background-color: rgba(69, 201, 245, 0.5);
+    /* background-color: rgba(69, 201, 245, 0.5); */
+    background-color: ${(props) => props.theme.colorPalette.accent2};
+  }
+
+  &:hover {
+    color: ${(props) =>
+      getStyledFontColor(props.theme.colorPalette.accent2, props)};
   }
   &:hover:after {
     top: 0%;
-    left: -0.1em;
-    right: -0.1em;
+    left: -0.2em;
+    right: -0.2em;
   }
 `;
 
@@ -48,7 +56,7 @@ export const Introduction = () => {
       </p>
       <p>
         You can find me on{" "}
-        <Link href="https://www.linkedin.com/in/cody-spate/">LinkedIn</Link>.
+        <Link href="https://www.linkedin.com/in/cody-spate/">LinkedIn.</Link>
       </p>
     </Box>
   );
