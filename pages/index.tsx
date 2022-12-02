@@ -24,8 +24,38 @@ export default function Home(props: HomeProps) {
       <Container>
         <GlobalStyle />
         <Head>
-          <title>Cody Spate</title>
-          <meta name="description" content="Cody Spate personal website" />
+          <title>Cody Spate - Software Engineering Manager</title>
+          <meta
+            name="description"
+            content="I am a Software Engineering Manager focused on developer satisfaction and driving teams for high value outcomes."
+          />
+          <meta charSet="utf-8" />
+          <meta name="author" content="Cody Spate" />
+
+          <meta property="og:title" content="Cody Spate" />
+          <meta
+            property="og:description"
+            content="I am a Software Engineering Manager focused on developer satisfaction and driving teams for high value outcomes."
+          />
+          <meta property="og:site_name" content="Cody Spate" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="codyspate.com" />
+          <meta property="og:image" content="/cody-photo.jpeg" />
+
+          <meta
+            name="twitter:title"
+            content="Cody Spate - Software Engineering Manager"
+          />
+          <meta
+            name="twitter:description"
+            content="I am a Software Engineering Manager focused on developer satisfaction and driving teams for high value outcomes."
+          />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:image" content="/cody-photo.jpeg" />
+          <meta name="twitter:image:alt" content="Portrait of Cody Spate" />
+          <meta name="twitter:creator" content="@codyspate" />
+          <meta name="twitter:site" content="@codyspate" />
+
           <link rel="icon" href="/favicon.ico" />
           <link
             rel="apple-touch-icon"
