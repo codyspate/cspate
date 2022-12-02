@@ -27,7 +27,7 @@ export default function Home(props: HomeProps) {
           <title>Cody Spate - Software Engineering Manager</title>
           <meta
             name="description"
-            content="I am a Software Engineering Manager focused on developer satisfaction and driving teams for high value outcomes."
+            content="I am a Software Engineering Manager focused on developer satisfaction and guiding teams toward high value outcomes."
           />
           <meta charSet="utf-8" />
           <meta name="author" content="Cody Spate" />
@@ -35,7 +35,7 @@ export default function Home(props: HomeProps) {
           <meta property="og:title" content="Cody Spate" />
           <meta
             property="og:description"
-            content="I am a Software Engineering Manager focused on developer satisfaction and driving teams for high value outcomes."
+            content="I am a Software Engineering Manager focused on developer satisfaction and guiding teams toward high value outcomes."
           />
           <meta property="og:site_name" content="Cody Spate" />
           <meta property="og:type" content="website" />
@@ -48,7 +48,7 @@ export default function Home(props: HomeProps) {
           />
           <meta
             name="twitter:description"
-            content="I am a Software Engineering Manager focused on developer satisfaction and driving teams for high value outcomes."
+            content="I am a Software Engineering Manager focused on developer satisfaction and guiding teams toward high value outcomes."
           />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:image" content="/cody-photo.jpeg" />
