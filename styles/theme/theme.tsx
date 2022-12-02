@@ -46,10 +46,14 @@ export const theme: DefaultTheme = {
   },
 };
 
+export const getTheme = () => {
+  const colorsIndex = Math.floor(Math.random() * colors.length);
+  theme.colorPalette = colors[colorsIndex] ?? colors[0];
+  return theme;
+};
+
 export const useGetTheme = () => {
   return useMemo(() => {
-    const colorsIndex = Math.floor(Math.random() * colors.length);
-    theme.colorPalette = colors[colorsIndex] ?? colors[0];
-    return theme;
+    getTheme();
   }, []);
 };

@@ -1,7 +1,7 @@
 import Head from "next/head";
-import styled, { ThemeProvider } from "styled-components";
+import styled, { DefaultTheme, ThemeProvider } from "styled-components";
 import { GlobalStyle } from "../styles/global-style";
-import { theme, useGetTheme } from "../styles/theme/theme";
+import { getTheme } from "../styles/theme/theme";
 
 import { Introduction } from "../views/introduction/introduction";
 import { Music } from "../views/music/music";
@@ -9,9 +9,18 @@ import { Music } from "../views/music/music";
 const Container = styled.div`
   padding: 0 2rem;
 `;
-export default function Home() {
+
+export async function getServerSideProps() {
+  const theme = getTheme();
+  return { props: { theme } };
+}
+
+export type HomeProps = {
+  theme: DefaultTheme;
+};
+export default function Home(props: HomeProps) {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={props.theme}>
       <Container>
         <GlobalStyle />
         <Head>
